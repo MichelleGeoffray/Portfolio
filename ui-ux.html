@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UI/UX Design — Michelle Geoffray</title>
+<meta name="description" content="UI/UX design work by Michelle Geoffray, including website wireframes, user flows, information architecture, and interface design in Figma">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="logo" href="index.html" aria-label="Michelle Geoffray, home">
+      <span class="logo-mark">Michelle Geoffray</span>
+    </a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="work.html">Work</a>
+      <a href="resume.html">Resume</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="nav-burger" id="navBurger" aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html">Home</a>
+    <a href="work.html">Work</a>
+    <a href="resume.html">Resume</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-hero">
+    <div class="section-inner">
+      <p class="eyebrow">02 · UI/UX Design</p>
+      <h1 class="section-title" style="max-width:32ch;">Interfaces, mapped before they're built.</h1>
+      <p class="section-lede">
+        From information architecture and user flows to wireframes and finished interfaces, these projects show how I work through the structure of an experience before designing and building it.
+      </p>
+    </div>
+  </section>
+
+  <section style="padding-top:0;">
+    <div class="section-inner">
+
+      <!-- ---- My Process ---- -->
+      <div class="reveal" style="margin-bottom:56px; margin-top:60px;">
+        <h2 class="subsection-label" style="margin-top:0;">How I Work</h2>
+        <div class="facet-grid">
+          <div class="facet">
+            <h3>Understand the User</h3>
+            <p>Consider the user's goals, needs, and expectations so the structure is solving the right problem before I start designing screens.</p>
+          </div>
+          <div class="facet">
+            <h3>Map the Structure</h3>
+            <p>Organize the pages, content, and interactions into a clear structure, using sitemaps and user flows to work out how everything connects.</p>
+          </div>
+          <div class="facet">
+            <h3>Build the Wireframes</h3>
+            <p>Work through layout, hierarchy, and interactions in low-fidelity wireframes before committing to visual design or code.</p>
+          </div>
+          <div class="facet">
+            <h3>Refine the Interface</h3>
+            <p>Turn the structure into a finished interface, refining hierarchy, consistency, accessibility, and the details of how it behaves.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============ THIS SITE, MAPPED ============ -->
+      <article class="case-block case-block--sitemap reveal">
+        <div class="case-head">
+          <div>
+            <h2>This Site, Mapped</h2>
+            <p style="font-family:var(--font-mono); font-size:.78rem; text-transform:uppercase; letter-spacing:.05em; color:var(--forest); margin-top:4px;">Information Architecture · Sitemap</p>
+          </div>
+          <span class="tag tag--forest">Live · Interactive</span>
+        </div>
+        <p class="desc">
+          This is the actual structure behind the portfolio you're on right now. Solid lines show the primary navigation; lighter dashed lines show the direct paths from Home. Select a page to compare its wireframe with the interface it became.
+        </p>
+
+        <div class="sitemap" data-sitemap>
+
+          <!-- 1 · information architecture -->
+          <div class="sitemap__ia">
+            <p class="sitemap__maplabel">Information Architecture</p>
+
+            <div class="sitemap__mapwrap">
+              <div class="sitemap__map" data-sitemap-map role="group"
+                   aria-label="Portfolio sitemap. Select a page to compare its wireframe and final design.">
+
+                <svg class="sitemap__wires" viewBox="0 0 1000 660" preserveAspectRatio="none" aria-hidden="true">
+                  <g class="sitemap__edges">
+                    <path class="edge edge--primary"   data-edge="home-work"        d="M500,168 C500,222 255,205 255,264"></path>
+                    <path class="edge edge--primary"   data-edge="home-resume"      d="M500,168 L500,264"></path>
+                    <path class="edge edge--primary"   data-edge="home-contact"     d="M500,168 C500,222 745,205 745,264"></path>
+                    <path class="edge edge--primary"   data-edge="work-development" d="M255,408 C255,446 230,448 230,483"></path>
+                    <path class="edge edge--primary"   data-edge="work-uiux"        d="M255,408 C255,456 500,440 500,483"></path>
+                    <path class="edge edge--primary"   data-edge="work-design"      d="M255,408 C255,462 770,436 770,483"></path>
+                    <path class="edge edge--secondary" data-edge="home-development" d="M455,172 C340,214 128,272 140,398 C149,458 190,480 228,484"></path>
+                    <path class="edge edge--secondary" data-edge="home-uiux"        d="M480,168 C418,220 372,305 375,402 C378,450 424,474 497,484"></path>
+                    <path class="edge edge--secondary" data-edge="home-design"      d="M545,172 C660,214 872,272 860,398 C851,458 810,480 772,484"></path>
+                  </g>
+                </svg>
+
+                <button type="button" class="smnode" data-sm data-node="home" aria-pressed="false" style="left:50%;top:2%;"
+                  data-num="01" data-name="Home" data-desc="Introduction, featured work, and paths into the portfolio"
+                  data-href="index.html"
+                  data-wire="assets/ui-ux/wireframes/wireframe_home.png"
+                  data-live="assets/ui-ux/live/live_home.jpeg">
+                  <span class="smnode__thumb" aria-hidden="true"><img src="assets/ui-ux/wireframes/wireframe_home.png" alt="" loading="lazy" decoding="async"></span>
+                  <span class="smnode__name">Home</span>
+                </button>
+
+                <button type="button" class="smnode" data-sm data-node="work" aria-pressed="false" style="left:25.5%;top:38%;"
+                  data-num="02" data-name="Work" data-desc="The main index for Development, UI/UX, and Design"
+                  data-href="work.html"
+                  data-wire="assets/ui-ux/wireframes/wireframe_work.png"
+                  data-live="assets/ui-ux/live/live_work.jpeg">
+                  <span class="smnode__thumb" aria-hidden="true"><img src="assets/ui-ux/wireframes/wireframe_work.png" alt="" loading="lazy" decoding="async"></span>
+                  <span class="smnode__name">Work</span>
+                </button>
+                <button type="button" class="smnode" data-sm data-node="resume" aria-pressed="false" style="left:50%;top:38%;"
+                  data-num="03" data-name="Resume" data-desc="Full resume, viewable and downloadable"
+                  data-href="resume.html"
+                  data-wire="assets/ui-ux/wireframes/wireframe_resume.png"
+                  data-live="assets/ui-ux/live/live_resume.png">
+                  <span class="smnode__thumb" aria-hidden="true"><img src="assets/ui-ux/wireframes/wireframe_resume.png" alt="" loading="lazy" decoding="async"></span>
+                  <span class="smnode__name">Resume</span>
+                </button>
+                <button type="button" class="smnode" data-sm data-node="contact" aria-pressed="false" style="left:74.5%;top:38%;"
+                  data-num="04" data-name="Contact" data-desc="Ways to get in touch"
+                  data-href="contact.html"
+                  data-wire="assets/ui-ux/wireframes/wireframe_contact.png"
+                  data-live="assets/ui-ux/live/live-contact.jpeg">
+                  <span class="smnode__thumb" aria-hidden="true"><img src="assets/ui-ux/wireframes/wireframe_contact.png" alt="" loading="lazy" decoding="async"></span>
+                  <span class="smnode__name">Contact</span>
+                </button>
+
+                <button type="button" class="smnode" data-sm data-node="development" aria-pressed="false" style="left:23%;top:71%;"
+                  data-num="05" data-name="Development" data-desc="Selected web development and software projects"
+                  data-href="development.html"
+                  data-wire="assets/ui-ux/wireframes/wireframe_development.png"
+                  data-live="assets/ui-ux/live/live_development.jpeg">
+                  <span class="smnode__thumb" aria-hidden="true"><img src="assets/ui-ux/wireframes/wireframe_development.png" alt="" loading="lazy" decoding="async"></span>
+                  <span class="smnode__name">Development</span>
+                </button>
+                <button type="button" class="smnode smnode--here" data-sm data-node="uiux" aria-pressed="false" style="left:50%;top:71%;"
+                  data-num="06" data-name="UI/UX" data-desc="Wireframes, user flows, and interface planning"
+                  data-href="ui-ux.html"
+                  data-wire="assets/ui-ux/wireframes/wireframe_uiux.png"
+                  data-live="assets/ui-ux/live/live-uiux.jpeg">
+                  <span class="smnode__here" aria-hidden="true">You are here</span>
+                  <span class="smnode__thumb" aria-hidden="true"><img src="assets/ui-ux/wireframes/wireframe_uiux.png" alt="" loading="lazy" decoding="async"></span>
+                  <span class="smnode__name">UI/UX</span>
+                </button>
+                <button type="button" class="smnode" data-sm data-node="design" aria-pressed="false" style="left:77%;top:71%;"
+                  data-num="07" data-name="Design" data-desc="Graphic design, branding &amp; illustration"
+                  data-href="design.html"
+                  data-wire="assets/ui-ux/wireframes/wireframe_design.png"
+                  data-live="assets/ui-ux/live/live_design.jpeg">
+                  <span class="smnode__thumb" aria-hidden="true"><img src="assets/ui-ux/wireframes/wireframe_design.png" alt="" loading="lazy" decoding="async"></span>
+                  <span class="smnode__name">Design</span>
+                </button>
+
+              </div>
+            </div>
+
+            <p class="sitemap__note">Work is the main index for the three disciplines, while Home links to each one directly. Resume and Contact are linked directly from Home.</p>
+          </div>
+
+          <!-- 2 · selected-page wireframe → interface comparison -->
+          <div class="pagecompare" data-compare style="--reveal:50%;">
+            <div class="pagecompare__head">
+              <p class="pagecompare__title"><span data-compare-num>01</span> · <span data-compare-name>Home</span></p>
+              <p class="pagecompare__sub">Structure&nbsp;→&nbsp;Interface</p>
+              <p class="pagecompare__desc" data-compare-desc>Introduction, featured work, and paths into the portfolio</p>
+            </div>
+
+            <div class="pagecompare__control">
+              <div class="pagecompare__control-inner">
+                <span class="pagecompare__end">Wireframe</span>
+                <input type="range" min="0" max="100" value="50" step="1" class="pagecompare__range"
+                       data-compare-range aria-label="Reveal the live site over the wireframe">
+                <span class="pagecompare__end">Live</span>
+              </div>
+            </div>
+
+            <div class="pagecompare__viewer" data-compare-viewer>
+              <div class="pagecompare__stage">
+                <img class="pagecompare__img pagecompare__img--wire" data-compare-wire alt="" decoding="async">
+                <img class="pagecompare__img pagecompare__img--live" data-compare-live alt="" decoding="async">
+              </div>
+              <span class="pagecompare__seam" aria-hidden="true"></span>
+            </div>
+
+            <a class="pagecompare__open" data-compare-open href="index.html" target="_blank" rel="noopener">View live page&nbsp;↗<span class="sr-only"> (opens in new tab)</span></a>
+          </div>
+
+        </div>
+      </article>
+
+      <!-- ============ CASE 1 · CARING FOR PEOPLE ============ -->
+      <article class="case-block reveal">
+        <div class="case-head">
+          <div>
+            <span class="index-num" style="display:block; margin-bottom:6px;">01</span>
+            <h2>Caring for People</h2>
+            <p style="font-family:var(--font-mono); font-size:.78rem; text-transform:uppercase; letter-spacing:.05em; color:var(--forest); margin-top:4px;">Website Redesign · Wireframes</p>
+          </div>
+          <span class="tag tag--forest">Figma · Wireframing · Information Architecture</span>
+        </div>
+        <p class="desc">
+          A website redesign for a coaching organization, focused on restructuring the site's navigation and page hierarchy.
+          I mapped the main pages and user paths in Figma, with the goal of making services easier to find and the path to booking more direct.
+        </p>
+
+        <div class="uxflow" data-uxflow>
+          <fieldset class="uxflow__steps">
+            <legend class="sr-only">Caring for People wireframe screens</legend>
+            <label class="uxflow__step">
+              <input type="radio" name="cfp-step" value="0" checked>
+              <span class="uxflow__step-num">1</span><span>Homepage</span>
+            </label>
+            <label class="uxflow__step">
+              <input type="radio" name="cfp-step" value="1">
+              <span class="uxflow__step-num">2</span><span>Services</span>
+            </label>
+            <label class="uxflow__step">
+              <input type="radio" name="cfp-step" value="2">
+              <span class="uxflow__step-num">3</span><span>FAQ</span>
+            </label>
+            <label class="uxflow__step">
+              <input type="radio" name="cfp-step" value="3">
+              <span class="uxflow__step-num">4</span><span>About &amp; Contact</span>
+            </label>
+          </fieldset>
+
+          <div class="uxflow__stage">
+            <button class="uxflow__nav uxflow__nav--prev" type="button" aria-label="Previous screen">‹</button>
+            <div class="uxflow__frame" aria-live="polite">
+
+              <div class="uxflow__panel is-active" data-panel="0">
+                <div class="uxflow__panel-imgs">
+                  <button class="uxflow__imgbtn" type="button" data-full="assets/ui-ux/cfp-homepage.png" data-alt="Caring For People homepage wireframe: hero image placeholder with headline and two calls to action, followed by a two-up Services section (Enneagram Coaching, Spiritual Direction)." aria-label="View homepage wireframe larger">
+                    <img src="assets/ui-ux/cfp-homepage.png" alt="Caring For People homepage wireframe: hero image placeholder with headline and two calls to action, followed by a two-up Services section (Enneagram Coaching, Spiritual Direction)." loading="lazy">
+                  </button>
+                </div>
+                <p class="uxflow__panel-caption"><strong>Homepage —</strong> Reworked the homepage hierarchy to introduce the organization clearly and give visitors a more direct path into its services.</p>
+              </div>
+
+              <div class="uxflow__panel" data-panel="1">
+                <div class="uxflow__panel-imgs">
+                  <button class="uxflow__imgbtn" type="button" data-full="assets/ui-ux/cfp-servicespages.png" data-alt="Two Caring For People service page wireframes side by side, Enneagram Coaching and Spiritual Direction, sharing an identical template: hero, description, supporting image blocks, and a shared appointment CTA." aria-label="View service page wireframes larger">
+                    <img src="assets/ui-ux/cfp-servicespages.png" alt="Two Caring For People service page wireframes side by side, Enneagram Coaching and Spiritual Direction, sharing an identical template: hero, description, supporting image blocks, and a shared appointment CTA." loading="lazy">
+                  </button>
+                </div>
+                <p class="uxflow__panel-caption"><strong>Services —</strong> Gave each service its own page while keeping the structure consistent between the two.</p>
+              </div>
+
+              <div class="uxflow__panel" data-panel="2">
+                <div class="uxflow__panel-imgs">
+                  <button class="uxflow__imgbtn" type="button" data-full="assets/ui-ux/cfp-faqsection.png" data-alt="FAQ wireframe with three accordion categories (General Questions, Process and Sessions, Pricing and Policies), annotated to show how the Services dropdown menu in the navigation maps directly onto the same three groupings." aria-label="View FAQ wireframe larger">
+                    <img src="assets/ui-ux/cfp-faqsection.png" alt="FAQ wireframe with three accordion categories (General Questions, Process and Sessions, Pricing and Policies), annotated to show how the Services dropdown menu in the navigation maps directly onto the same three groupings." loading="lazy">
+                  </button>
+                </div>
+                <p class="uxflow__panel-caption"><strong>FAQ —</strong> Grouped common questions so visitors can find answers before reaching out. The navigation dropdown and accordion groupings mirror each other, so the menu previews what's inside.</p>
+              </div>
+
+              <div class="uxflow__panel" data-panel="3">
+                <div class="uxflow__panel-imgs">
+                  <button class="uxflow__imgbtn" type="button" data-full="assets/ui-ux/cfp-aboutpage.png" data-alt="About page wireframe: introduction with portrait placeholder, followed by Mission and Background and Experience sections, ending in a call to action to book an appointment or get in touch." aria-label="View About page wireframe larger">
+                    <img src="assets/ui-ux/cfp-aboutpage.png" alt="About page wireframe: introduction with portrait placeholder, followed by Mission and Background and Experience sections, ending in a call to action to book an appointment or get in touch." loading="lazy">
+                  </button>
+                  <button class="uxflow__imgbtn" type="button" data-full="assets/ui-ux/cfp-contactpage.png" data-alt="Contact page wireframe: a short first name, last name, email, and phone form with a single Send button, plus alternate contact methods and social links below." aria-label="View Contact page wireframe larger">
+                    <img src="assets/ui-ux/cfp-contactpage.png" alt="Contact page wireframe: a short first name, last name, email, and phone form with a single Send button, plus alternate contact methods and social links below." loading="lazy">
+                  </button>
+                </div>
+                <p class="uxflow__panel-caption"><strong>About &amp; Contact —</strong> Gave the organization's story and background a dedicated space, while keeping the contact experience short and straightforward.</p>
+              </div>
+
+            </div>
+            <button class="uxflow__nav uxflow__nav--next" type="button" aria-label="Next screen">›</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- ============ CASE 2 · RECIPEAS ============ -->
+      <article class="case-block reveal">
+        <div class="case-head">
+          <div>
+            <span class="index-num" style="display:block; margin-bottom:6px;">02</span>
+            <h2>Recipeas</h2>
+            <p style="font-family:var(--font-mono); font-size:.78rem; text-transform:uppercase; letter-spacing:.05em; color:var(--forest); margin-top:4px;">Recipe-Sharing App · User Flows</p>
+          </div>
+          <span class="tag tag--forest">Figma · User Flows · Wireframing</span>
+        </div>
+        <p class="desc">
+          A recipe-sharing app concept developed as a team project. I focused on mapping the main user flow — finding a recipe, creating an account, and posting a recipe — before the team moved into detailed screen design.
+        </p>
+
+        <div class="uxflow" data-uxflow>
+          <fieldset class="uxflow__steps">
+            <legend class="sr-only">Recipeas screens and user flow</legend>
+            <label class="uxflow__step">
+              <input type="radio" name="recipeas-step" value="0" checked>
+              <span class="uxflow__step-num">1</span><span>Homepage</span>
+            </label>
+            <label class="uxflow__step">
+              <input type="radio" name="recipeas-step" value="1">
+              <span class="uxflow__step-num">2</span><span>Login</span>
+            </label>
+            <label class="uxflow__step">
+              <input type="radio" name="recipeas-step" value="2">
+              <span class="uxflow__step-num">3</span><span>Create a Dish</span>
+            </label>
+            <label class="uxflow__step">
+              <input type="radio" name="recipeas-step" value="3">
+              <span class="uxflow__step-num">4</span><span>Full User Flow</span>
+            </label>
+          </fieldset>
+
+          <div class="uxflow__stage">
+            <button class="uxflow__nav uxflow__nav--prev" type="button" aria-label="Previous screen">‹</button>
+            <div class="uxflow__frame" aria-live="polite">
+
+              <div class="uxflow__panel is-active" data-panel="0">
+                <div class="uxflow__panel-imgs">
+                  <button class="uxflow__imgbtn" type="button" data-full="assets/ui-ux/recipeas-homepage.png" data-alt="Two versions of the Recipeas homepage stacked: an early low-fidelity wireframe with dish-type, time, ingredient, and creator filters beside a recipe grid, and a refined version with the final Recipeas logo, search bar, and login and register links." aria-label="View homepage wireframe and refined build larger">
+                    <img src="assets/ui-ux/recipeas-homepage.png" alt="Two versions of the Recipeas homepage stacked: an early low-fidelity wireframe with dish-type, time, ingredient, and creator filters beside a recipe grid, and a refined version with the final Recipeas logo, search bar, and login and register links." loading="lazy">
+                  </button>
+                </div>
+                <p class="uxflow__panel-caption"><strong>Homepage —</strong> The initial wireframe explored browsing and filtering as the primary way to discover recipes. The structure was then carried into the more refined interface below.</p>
+              </div>
+
+              <div class="uxflow__panel" data-panel="1">
+                <div class="uxflow__panel-imgs">
+                  <button class="uxflow__imgbtn" type="button" data-full="assets/ui-ux/recipeas-login.png" data-alt="Recipeas login screen with username and password fields, a Sign in button, and a link to register instead." aria-label="View login wireframe larger">
+                    <img src="assets/ui-ux/recipeas-login.png" alt="Recipeas login screen with username and password fields, a Sign in button, and a link to register instead." loading="lazy">
+                  </button>
+                </div>
+                <p class="uxflow__panel-caption"><strong>Login —</strong> Kept the login screen focused on the information needed to access an account, without adding unnecessary steps.</p>
+              </div>
+
+              <div class="uxflow__panel" data-panel="2">
+                <div class="uxflow__panel-imgs">
+                  <button class="uxflow__imgbtn" type="button" data-full="assets/ui-ux/recipeas-create.png" data-alt="Create a Dish form wireframe with a title field, image upload, a time-expected slider, an ingredients field with tag chips, an instructions text area, and a Post button." aria-label="View recipe creation wireframe larger">
+                    <img src="assets/ui-ux/recipeas-create.png" alt="Create a Dish form wireframe with a title field, image upload, a time-expected slider, an ingredients field with tag chips, an instructions text area, and a Post button." loading="lazy">
+                  </button>
+                </div>
+                <p class="uxflow__panel-caption"><strong>Create a Dish —</strong> Structured the recipe form into a simple sequence: title, image, preparation time, ingredients, and instructions.</p>
+              </div>
+
+              <div class="uxflow__panel" data-panel="3">
+                <div class="uxflow__panel-imgs">
+                  <button class="uxflow__imgbtn" type="button" data-full="assets/ui-ux/recipeas-flowchart.png" data-alt="Recipeas user flow diagram: from entering the site, through login, registration, and authentication, into the authenticated navigation covering homepage, user recipes, saved recipes, logout, the new recipe form, and recipe submission." aria-label="View full user flow diagram larger">
+                    <img src="assets/ui-ux/recipeas-flowchart.png" alt="Recipeas user flow diagram: from entering the site, through login, registration, and authentication, into the authenticated navigation covering homepage, user recipes, saved recipes, logout, the new recipe form, and recipe submission." loading="lazy">
+                  </button>
+                </div>
+                <p class="uxflow__panel-caption"><strong>Full User Flow —</strong> Mapped the full path from entering the site through authentication and recipe creation, making the screens and decisions in the experience easier to plan as a team.</p>
+              </div>
+
+            </div>
+            <button class="uxflow__nav uxflow__nav--next" type="button" aria-label="Next screen">›</button>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="section-inner footer-inner">
+    <p>Michelle Geoffray</p>
+    <a href="contact.html">Get in touch →</a>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image preview" aria-hidden="true">
+  <button class="lightbox__close" id="lightboxClose" type="button" aria-label="Close">&times;</button>
+  <img id="lightboxImg" src="" alt="">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

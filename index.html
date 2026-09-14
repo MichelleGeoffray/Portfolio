@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Michelle Geoffray - Portfolio</title>
+<meta name="description" content="Portfolio of Michelle Geoffray, a front-end developer and UI/UX graphic designer">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="logo" href="index.html" aria-label="Michelle Geoffray, home">
+      <span class="logo-mark">Michelle Geoffray</span>
+    </a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="work.html">Work</a>
+      <a href="resume.html">Resume</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="nav-burger" id="navBurger" aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html">Home</a>
+    <a href="work.html">Work</a>
+    <a href="resume.html">Resume</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-copy reveal">
+        <p class="hero-greeting">Hi, I'm</p>
+        <h1 class="hero-title">Michelle <em>Geoffray</em></h1>
+        <p class="hero-bio">
+          I recently graduated from Purdue University with a Bachelor's degree in Computer
+          Graphics Technology, specializing in Web Programming &amp; Design, and a minor in
+          Computer Science. I enjoy working where design and development meet, combining
+          technical problem-solving with thoughtful visual design to create digital experiences
+          that are both intuitive and engaging. My experience spans frontend development, UI/UX
+          design, branding, and digital illustration, and I love taking projects from concept
+          through implementation. I'm currently seeking opportunities where I can continue
+          growing as a frontend developer, UI engineer, or product-focused designer while
+          contributing thoughtful, high-quality work to a collaborative team.
+        </p>
+        <div class="hero-actions">
+          <a href="work.html" class="btn btn-solid">View my work</a>
+          <a href="resume.html" class="btn btn-outline">Resume</a>
+        </div>
+      </div>
+
+      <div class="hero-portrait reveal">
+        <div class="portrait-mat" aria-hidden="true"></div>
+        <div class="portrait-frame">
+          <img src="assets/headshot.jpg" alt="Portrait of Michelle Geoffray">
+          <div class="portrait-fallback">
+            <span class="initials">MG</span>
+          </div>
+        </div>
+        <svg class="portrait-sprig" width="64" height="46" viewBox="0 0 64 46" fill="none" aria-hidden="true">
+          <path d="M2 44 C18 30, 24 18, 30 2" stroke="#37503D" stroke-width="1.4"/>
+          <path d="M12 34 C16 28, 22 27, 25 22" stroke="#37503D" stroke-width="1.2" fill="none"/>
+          <path d="M20 22 C24 16, 30 15, 33 10" stroke="#37503D" stroke-width="1.2" fill="none"/>
+          <circle cx="30" cy="3" r="2.6" fill="#6E2A34"/>
+          <circle cx="24" cy="12" r="1.8" fill="#6E2A34"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PILLARS ============ -->
+  <section class="pillars">
+    <div class="section-inner">
+      <p class="eyebrow">What I do</p>
+      <h2 class="section-title">Where design meets technology.</h2>
+
+      <div class="pillar-grid">
+        <article class="pillar reveal">
+          <span class="pillar-num">01</span>
+          <h3>Front-End Development</h3>
+          <p>Turning designs into responsive, interactive websites with HTML, CSS, JavaScript, React, and more.</p>
+          <a class="btn-text" href="development.html">View development work →</a>
+        </article>
+        <article class="pillar reveal">
+          <span class="pillar-num">02</span>
+          <h3>UI/UX Design</h3>
+          <p>Creating intuitive interfaces through wireframes, user flows, prototypes, and user-centered design.</p>
+          <a class="btn-text" href="ui-ux.html">View UX work →</a>
+        </article>
+        <article class="pillar reveal">
+          <span class="pillar-num">03</span>
+          <h3>Graphic Design &amp; Branding</h3>
+          <p>Building visual identities that give a brand its personality - from logos and typography to color, graphics, and cohesive visual systems.</p>
+          <a class="btn-text" href="design.html">View design work →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section class="experience" id="experience">
+    <div class="section-inner">
+      <p class="eyebrow">Experience</p>
+      <h2 class="section-title">Where I've put this to work.</h2>
+
+      <!-- ====== Experience 1 ======  -->
+      <div class="exp-entry reveal">
+        <div class="exp-entry__meta">
+          <p class="exp-entry__role">Graphic Design &amp; Marketing Intern</p>
+          <p class="exp-entry__org">LVLUP-N-COMING</p>
+          <p class="exp-entry__date">May 2026 - Present</p>
+        </div>
+        <ul class="exp-entry__list">
+          <li>Design branded social media content, marketing assets, and reusable templates using Figma, Canva, and Adobe Creative Suite.</li>
+          <li>Develop cohesive visual systems across digital content, applying principles of hierarchy, typography, and composition to make information clear and engaging.</li>
+          <li>Create icons, illustrations, mascots, and UI-inspired graphics that strengthen the brand's visual identity and maintain consistency across content.</li>
+        </ul>
+      </div>
+      <!-- ====== Experience 2 ======  -->
+      <div class="exp-entry reveal">
+        <div class="exp-entry__meta">
+          <p class="exp-entry__role">Full Stack Web Development Intern</p>
+          <p class="exp-entry__org">Business Web Solutions</p>
+          <p class="exp-entry__date">Nov 2025 - Jan 2026</p>
+        </div>
+        <ul class="exp-entry__list">
+          <li>Designed and developed responsive web applications with HTML, CSS, JavaScript, React, Django, and Python, translating ideas and designs into functional user experiences.</li>
+          <li>Wireframed and prototyped interfaces in Figma before development, then built reusable UI components with Bootstrap and jQuery for consistent, accessible experiences across screen sizes.</li>
+          <li>Connected front-end interfaces to REST APIs and SQL databases, bringing real-time data into interactive web experiences.</li>
+        </ul>
+      </div>
+      <!-- ====== Experience 3 ======  -->
+      <div class="exp-entry reveal">
+        <div class="exp-entry__meta">
+          <p class="exp-entry__role">Software Development Intern</p>
+          <p class="exp-entry__org">Ravensbay</p>
+          <p class="exp-entry__date">Jun 2023 - Aug 2023</p>
+        </div>
+        <ul class="exp-entry__list">
+          <li>Worked across C# and SQL in a full-stack development environment, building a foundation in backend systems and data that continues to inform my approach to frontend development.</li>
+          <li>Learned an unfamiliar codebase and technology stack independently, quickly adapting to contribute to an active production project.</li>
+          <li>Participated in code and design reviews, incorporating team feedback to refine features and improve the overall user experience.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EDUCATION ============ -->
+  <section class="education" id="education">
+    <div class="section-inner">
+      <p class="eyebrow">Education</p>
+      <h2 class="section-title">What I studied.</h2>
+      <p class="section-lede">
+        <b>B.S. Computer Graphics Technology</b><br/>
+        <i>Web Programming &amp; Design · Computer Science Minor</i><br/>
+        Purdue University · 2025
+      </p>
+
+      <ol class="timeline">
+        <li class="timeline__item reveal">
+          <span class="timeline__num">01</span>
+          <div><h3>Web Development</h3>
+            <p>Built responsive websites and web applications across the frontend and backend, working with HTML, CSS, JavaScript, React, C#, PHP, SQL, and APIs.</p>
+          </div>
+        </li>
+        <li class="timeline__item reveal">
+          <span class="timeline__num">02</span>
+          <div><h3>UI/UX & Interaction</h3>
+            <p>Studied human-computer interaction and user-centered design through wireframes, prototypes, user flows, information architecture, and responsive interface design.</p>
+          </div>
+        </li>
+        <li class="timeline__item reveal">
+          <span class="timeline__num">03</span>
+          <div><h3>Creative Technology & Design</h3>
+            <p>Explored graphic design principles, 3D modeling, animation, imaging, interactive media, and data visualization - developing an understanding of how technology can be used as a creative medium.</p>
+          </div>
+        </li>
+        <li class="timeline__item reveal">
+          <span class="timeline__num">04</span>
+          <div><h3>Applied Problem Solving</h3>
+            <p>Worked through hands-on, project-based coursework that combined technical implementation with design thinking, research, iteration, and real-world constraints.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="section-inner footer-inner">
+    <p>Michelle Geoffray</p>
+    <a href="contact.html">Get in touch →</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

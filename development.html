@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Development — Michelle Geoffray</title>
+<meta name="description" content="Front-end and full-stack development work by Michelle Geoffray, including React, Django, and hand-built interactivity.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="logo" href="index.html" aria-label="Michelle Geoffray, home">
+      <span class="logo-mark">Michelle Geoffray</span>
+    </a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="work.html">Work</a>
+      <a href="resume.html">Resume</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="nav-burger" id="navBurger" aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html">Home</a>
+    <a href="work.html">Work</a>
+    <a href="resume.html">Resume</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-hero">
+    <div class="section-inner">
+      <p class="eyebrow">01 · Development</p>
+      <h1 class="section-title" style="max-width:32ch;">Front-end builds, full-stack systems.</h1>
+      <p class="section-lede">
+       Front-end development with JavaScript, React, and responsive UI, alongside full-stack work with C#, PHP, SQL, Django, and Python. The examples below show some of those skills in action, followed by selected projects and coursework.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS IN ACTION ============ -->
+  <section class="skills" id="skills">
+    <div class="section-inner">
+      <p class="eyebrow">Proof, not prose</p>
+      <h2 class="section-title">Don't just take my word for it.</h2>
+      <p class="section-lede">
+        Instead of just listing technologies, I wanted to show what I can actually build with them. Try a few of the interactions below!
+      </p>
+
+      <div class="demo-grid">
+
+        <article class="demo-card reveal">
+          <div class="demo-stage demo-hover">
+            <button type="button" class="hover-tile" id="hoverTile"
+                    aria-expanded="false" aria-controls="hoverReveal" aria-label="Toggle the revealed content">
+              <span class="hover-tile__base" aria-hidden="true">Hover to Explore</span>
+              <span class="hover-tile__reveal" id="hoverReveal" aria-hidden="true">
+                <strong>Additional Content</strong>
+              </span>
+            </button>
+          </div>
+          <h3>Hover interactions</h3>
+          <p>Uses hover states to reveal additional content without interrupting the page flow. Hover with a mouse, or activate with the keyboard.</p>
+        </article>
+
+        <article class="demo-card reveal">
+          <div class="demo-stage demo-gallery">
+            <div class="mini-gallery" id="miniGallery" role="group" aria-roledescription="carousel" aria-label="Sample project gallery">
+              <ul class="mini-gallery__track" id="galleryTrack" role="presentation">
+                <li style="--c:#37503D" role="group" aria-roledescription="slide" aria-label="1 of 3">Featured Project<span>Explore a collection of recent work.</span></li>
+                <li style="--c:#6E2A34" role="group" aria-roledescription="slide" aria-label="2 of 3">Project Details<span>Interaction and responsive behavior.</span></li>
+                <li style="--c:#8E8F7B" role="group" aria-roledescription="slide" aria-label="3 of 3">More to Explore<span>View another project →</span></li>
+              </ul>
+              <button class="gallery-arrow gallery-arrow--prev" id="galPrev" type="button" aria-label="Previous slide">‹</button>
+              <button class="gallery-arrow gallery-arrow--next" id="galNext" type="button" aria-label="Next slide">›</button>
+              <button class="gallery-pause" id="galPause" type="button" aria-label="Pause automatic slide rotation">❚❚</button>
+              <div class="gallery-dots" id="galDots"></div>
+            </div>
+            <p class="sr-only" id="galStatus" aria-live="polite"></p>
+          </div>
+          <h3>Gallery navigation</h3>
+          <p>A JavaScript-powered gallery with controls for moving between items.</p>
+        </article>
+
+        <article class="demo-card reveal">
+          <div class="demo-stage demo-responsive">
+            <div class="resize-demo" id="resizeDemo">
+              <div class="resize-demo__badge" id="resizeBadge" aria-hidden="true">Desktop</div>
+              <div class="resize-demo__grid" id="resizeGrid" aria-hidden="true">
+                <span></span><span></span><span></span><span></span>
+              </div>
+              <div class="resize-handle" id="resizeHandle" role="slider" tabindex="0"
+                   aria-label="Demo layout width"
+                   aria-valuemin="0" aria-valuemax="100" aria-valuenow="100" aria-valuetext="Desktop layout">⋮⋮</div>
+            </div>
+          </div>
+          <h3>Adaptive layouts</h3>
+          <p>Drag the handle (or use arrow keys) to resize the panel and watch a responsive layout react through CSS media queries.</p>
+        </article>
+
+        <article class="demo-card reveal">
+          <div class="demo-stage demo-zoom">
+            <div class="zoom-tile" id="zoomTile" role="img"
+                 aria-label="Demonstration image: a detailed illustration of a grand interior hall with an arched ceiling, a tall stained-glass window wall, a chandelier, and an ornate wrought-iron balcony railing. Moving a pointer across it shows a magnified detail view.">
+              <div class="zoom-lens" id="zoomLens" aria-hidden="true"></div>
+            </div>
+          </div>
+          <h3>Zoom &amp; detail views</h3>
+          <p>An image magnifier built with JavaScript. Move a pointer across the image to inspect fine detail.</p>
+        </article>
+
+        <article class="demo-card reveal">
+          <div class="demo-stage demo-validate">
+            <div class="validate-demo">
+              <label for="demoEmail" class="sr-only">Try typing an email address</label>
+              <input type="text" id="demoEmail" class="validate-demo__input" placeholder="Type an email…"
+                     autocomplete="off" spellcheck="false" aria-describedby="demoEmailMsg">
+              <p class="validate-demo__msg" id="demoEmailMsg" role="status" aria-live="polite">Waiting for input…</p>
+            </div>
+          </div>
+          <h3>Live validation</h3>
+          <p>Validates form input as it's entered, with immediate feedback.</p>
+        </article>
+
+        <article class="demo-card reveal">
+          <div class="demo-stage demo-follow">
+            <div class="follow-demo">
+              <div class="follow-demo__row">
+                <span class="follow-demo__avatar" aria-hidden="true">🚀</span>
+                <span class="follow-demo__name">user_01</span>
+              </div>
+              <span class="follow-demo__count" id="followCount" aria-live="polite">128 followers</span>
+              <button class="follow-demo__btn" id="followBtn" type="button" aria-pressed="false">Follow</button>
+            </div>
+          </div>
+          <h3>Stateful UI</h3>
+          <p>Follow, unfollow, and watch the interface update instantly — a small example of managing changing UI state.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURED PROJECTS ============ -->
+  <section style="padding-top:0;" aria-labelledby="featured-projects-label">
+    <div class="section-inner">
+
+      <h2 class="subsection-label" id="featured-projects-label" style="margin-top:8px;">Featured Projects</h2>
+      <p class="desc" style="margin-top:-6px; margin-bottom:8px;">
+        Three projects that show different sides of my development work: React-based interfaces, component-driven applications, and a full-stack Django application.
+      </p>
+
+      <!-- ---- Silver Dipper ---- -->
+      <article class="feat-project reveal">
+        <div class="feat-project__head">
+          <div>
+            <h3>Silver Dipper</h3>
+            <p class="feat-project__kicker">React Website Replica</p>
+          </div>
+        </div>
+        <p class="desc">
+          Recreated the six-page Silver Dipper website in React, focusing on reusable components, routing, and accurately reproducing the original interface.
+        </p>
+        <div class="feat-project__shots">
+          <figure class="feat-project__shot">
+            <div class="feat-project__frame">
+              <img src="assets/development/recreation_homePage.png" alt="Silver Dipper recreation — home page with logo, six-item nav, and hero shop photo" loading="lazy">
+            </div>
+            <figcaption>Home</figcaption>
+          </figure>
+          <figure class="feat-project__shot">
+            <div class="feat-project__frame">
+              <img src="assets/development/recreation_hoursPage.png" alt="Silver Dipper recreation — hours and locations page with two embedded Google Maps" loading="lazy">
+            </div>
+            <figcaption>Hours &amp; Locations — embedded maps</figcaption>
+          </figure>
+        </div>
+        <div class="tech-tags">
+          <span class="tag tag--forest">React</span>
+          <span class="tag tag--forest">Component Architecture</span>
+          <span class="tag tag--forest">React Router</span>
+          <span class="tag tag--forest">UI Recreation</span>
+        </div>
+        <div class="catalog-links">
+          <a class="btn-text" href="https://github.com/MichelleGeoffray/website-replica" target="_blank" rel="noopener" aria-label="View code for Silver Dipper on GitHub (opens in a new tab)">View code ↗</a>
+        </div>
+      </article>
+
+      <!-- ---- React Profile App ---- -->
+      <article class="feat-project reveal">
+        <div class="feat-project__head">
+          <div>
+            <h3>React Profile App</h3>
+            <p class="feat-project__kicker">React · Hooks · Forms</p>
+          </div>
+        </div>
+        <p class="desc">
+          Built a React application with registration, login, profile management, form validation, and searchable, paginated profile browsing.
+        </p>
+        <div class="feat-project__shots">
+          <figure class="feat-project__shot">
+            <div class="feat-project__frame">
+              <img src="assets/development/reactProfile_homePage.png" alt="React Profile App — home page with title filter, name search, and a paginated grid of profile cards" loading="lazy">
+            </div>
+            <figcaption>Home — search, filter &amp; pagination</figcaption>
+          </figure>
+          <figure class="feat-project__shot">
+            <div class="feat-project__frame">
+              <img src="assets/development/reactProfile_addProfilePage.png" alt="React Profile App — add profile form with name, email, title, description character counter, and photo upload" loading="lazy">
+            </div>
+            <figcaption>Add Profile — validated form</figcaption>
+          </figure>
+        </div>
+        <div class="tech-tags">
+          <span class="tag tag--forest">React</span>
+          <span class="tag tag--forest">Hooks</span>
+          <span class="tag tag--forest">Form Validation</span>
+          <span class="tag tag--forest">Pagination</span>
+        </div>
+        <div class="catalog-links">
+          <a class="btn-text" href="https://github.com/MichelleGeoffray/profile-app" target="_blank" rel="noopener" aria-label="View code for React Profile App on GitHub (opens in a new tab)">View code ↗</a>
+        </div>
+      </article>
+
+      <!-- ---- Django Social App ---- -->
+      <article class="feat-project reveal">
+        <div class="feat-project__head">
+          <div>
+            <h3>Django Social App</h3>
+            <p class="feat-project__kicker">Django · Python · Full-Stack</p>
+          </div>
+        </div>
+        <p class="desc">
+          Built a social feed application in Django and Python with user authentication, post creation, and a following system.
+        </p>
+        <div class="feat-project__shots">
+          <figure class="feat-project__shot">
+            <div class="feat-project__frame">
+              <img src="assets/development/django_homePage.png" alt="Django Social App — home feed listing timestamped posts with author names and avatars" loading="lazy">
+            </div>
+            <figcaption>Home feed</figcaption>
+          </figure>
+          <figure class="feat-project__shot">
+            <div class="feat-project__frame">
+              <img src="assets/development/django_createPostPage.png" alt="Django Social App — new post modal open over the feed with a text field and character state" loading="lazy">
+            </div>
+            <figcaption>New Post — modal dialog</figcaption>
+          </figure>
+        </div>
+        <div class="tech-tags">
+          <span class="tag tag--forest">Django</span>
+          <span class="tag tag--forest">Python</span>
+          <span class="tag tag--forest">ORM</span>
+          <span class="tag tag--forest">Authentication</span>
+        </div>
+        <div class="catalog-links">
+          <a class="btn-text" href="https://github.com/MichelleGeoffray/Django-Social-Media-App-BWS" target="_blank" rel="noopener" aria-label="View code for Django Social App on GitHub (opens in a new tab)">View code ↗</a>
+        </div>
+      </article>
+
+      <!-- ============ SELECTED COURSEWORK ============ -->
+      <h2 class="subsection-label">Selected Coursework</h2>
+      <p class="desc" style="margin-top:-6px; margin-bottom:8px;">
+        A selection of smaller projects and coursework covering JavaScript, interaction, responsive design, animation, and other web fundamentals.
+      </p>
+      <ul class="coursework-grid">
+        <li class="coursework-item">
+          <span class="tag">JS · Interaction Design</span>
+          <p><strong>Creature Creator</strong> — An interactive page where the user can choose a creature, hat, and background, with hover states, a sliding gallery, and reset button. </p>
+        </li>
+        <li class="coursework-item">
+          <span class="tag">JS · Game Logic</span>
+          <p><strong>Whack-a-Star</strong> — A browser game with a timer, score counter, and separate start, playing, and reset states.</p>
+        </li>
+        <li class="coursework-item">
+          <span class="tag">HTML · CSS · Bootstrap</span>
+          <p>An about-me site combining a university rankings data table with a clickable "10 interesting things" gallery.</p>
+        </li>
+        <li class="coursework-item">
+          <span class="tag">Forms · UI Design</span>
+          <p>Payment and mood-tracker forms with multiple input types and progress indicators that update as the user completes each section.</p>
+        </li>
+        <li class="coursework-item">
+          <span class="tag">CSS Hover · JS Events</span>
+          <p>A set of small interaction exercises covering hover effects, clickable images, and show/hide toggles.</p>
+          <span class="coursework-item__live">↑ try it live above</span>
+        </li>
+        <li class="coursework-item">
+          <span class="tag">Positioning · Animation</span>
+          <p>Exercises in CSS positioning and animation, including fixed sidebars, moving elements, drop-down ads, and bouncing objects.</p>
+        </li>
+        <li class="coursework-item">
+          <span class="tag">JS Gallery Transitions</span>
+          <p>A sliding image gallery with arrow and dot navigation, plus thumbnail previews on hover.</p>
+          <span class="coursework-item__live">↑ try it live above</span>
+        </li>
+        <li class="coursework-item">
+          <span class="tag">Media Queries</span>
+          <p>Three responsive webpages using media queries to adapt layouts across different screen sizes.</p>
+          <span class="coursework-item__live">↑ try it live above</span>
+        </li>
+        <li class="coursework-item">
+          <span class="tag">Advanced JS</span>
+          <p>Two image-zoom exercises: a hover zoom with a dedicated zoom window and a page with switchable zoomable images.</p>
+          <span class="coursework-item__live">↑ try it live above</span>
+        </li>
+        <li class="coursework-item">
+          <span class="tag">JS Animation · DOM</span>
+          <p>An interactive curriculum page with a rotating selection wheel that updates the displayed content when a name is selected.</p>
+        </li>
+      </ul>
+
+      <div class="catalog-links" style="margin-top:16px;">
+        <a class="btn-text" href="https://github.com/MichelleGeoffray/Web-Portfolio" target="_blank" rel="noopener" aria-label="View all coursework code on GitHub (opens in a new tab)">View coursework code ↗</a>
+      </div>
+
+      <p style="margin-top:32px; font-family: var(--font-mono); font-size:.82rem; color: var(--ink-faint);">
+        Additional experience — C#, PHP, SQL, REST APIs, jQuery, Bootstrap
+      </p>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="section-inner footer-inner">
+    <p>Michelle Geoffray</p>
+    <a href="contact.html">Get in touch →</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

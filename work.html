@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Work — Michelle Geoffray</title>
+<meta name="description" content="Selected development, UI/UX, and design work by Michelle Geoffray.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="logo" href="index.html" aria-label="Michelle Geoffray, home">
+      <span class="logo-mark">Michelle Geoffray</span>
+    </a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="work.html">Work</a>
+      <a href="resume.html">Resume</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="nav-burger" id="navBurger" aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html">Home</a>
+    <a href="work.html">Work</a>
+    <a href="resume.html">Resume</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-hero">
+    <div class="section-inner">
+      <p class="eyebrow">Index</p>
+      <h1 class="section-title" style="max-width:22ch;">Selected work, by discipline.</h1>
+      <p class="section-lede">A collection of projects spanning development, interface design, and visual design — from working applications to visual systems and everything in between.</p>
+    </div>
+  </section>
+
+  <section style="padding-top:0;">
+    <div class="section-inner">
+      <div class="index-list">
+
+        <a class="index-row index-row--dev reveal" href="development.html">
+          <span class="index-num">01</span>
+          <div class="index-main">
+            <h3>Development</h3>
+            <p>Responsive websites and applications built with HTML, CSS, JavaScript, React, and more.</p>
+            <span class="tag tag--forest">HTML · CSS · JavaScript · React · Python</span>
+          </div>
+          <div class="index-meta">
+            <span class="index-arrow">→</span>
+          </div>
+          <pre class="row-fx row-fx--dev" aria-hidden="true">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;&lt;/head&gt;
+  &lt;body&gt;&lt;/body&gt;
+&lt;/html&gt;</pre>
+          <span class="sr-only">Decorative: this row takes on a code-editor look, complete with a blinking cursor, on hover or focus.</span>
+        </a>
+
+        <a class="index-row index-row--uiux reveal" href="ui-ux.html">
+          <span class="index-num">02</span>
+          <div class="index-main">
+            <h3>UI/UX Design</h3>
+            <p>Wireframes, user flows, prototypes, and research that turn ideas into clear, usable interfaces.</p>
+            <span class="tag tag--forest">Figma · Wireframing · Prototyping · User Flows</span>
+          </div>
+          <div class="index-meta">
+            <span class="index-arrow">→</span>
+          </div>
+          <svg class="flow-fx" viewBox="0 0 180 56" aria-hidden="true" focusable="false">
+            <rect class="flow-fx__box" x="2"   y="17" width="40" height="22" rx="2"/>
+            <rect class="flow-fx__box" x="70"  y="17" width="40" height="22" rx="2"/>
+            <rect class="flow-fx__box" x="138" y="17" width="40" height="22" rx="2"/>
+            <line class="flow-fx__line" x1="42" y1="28" x2="70" y2="28"/>
+            <line class="flow-fx__line" x1="110" y1="28" x2="138" y2="28"/>
+            <path class="flow-fx__arrow" d="M64 23 L70 28 L64 33"/>
+            <path class="flow-fx__arrow" d="M132 23 L138 28 L132 33"/>
+          </svg>
+          <span class="sr-only">Decorative: this row sketches a small three-step wireframe flow and switches its heading to an interface-label style on hover or focus.</span>
+        </a>
+
+        <a class="index-row index-row--design reveal" href="design.html">
+          <span class="index-num">03</span>
+          <div class="index-main">
+            <h3>Graphic Design &amp; Branding</h3>
+            <p>Branding, illustrations, social content, and visual systems built to make a product feel cohesive and recognizable.</p>
+            <span class="tag tag--forest">Brand Systems · Social Content · Illustration</span>
+          </div>
+          <div class="index-meta">
+            <span class="index-arrow">→</span>
+          </div>
+          <svg class="brush-fx" viewBox="0 0 170 60" aria-hidden="true" focusable="false">
+            <path class="brush-fx__swoosh" d="M6 40 C 40 10, 90 55, 140 18" />
+            <g class="brush-fx__pencil">
+              <rect class="brush-fx__pencil-eraser" x="-30" y="-3.2" width="4" height="6.4" rx="1"/>
+              <rect class="brush-fx__pencil-body" x="-26" y="-3.2" width="18" height="6.4"/>
+              <path class="brush-fx__pencil-tip" d="M0 0 L-8 -3.2 L-8 3.2 Z"/>
+            </g>
+            <circle class="brush-fx__spark brush-fx__spark--1" cx="150" cy="10" r="3"/>
+            <circle class="brush-fx__spark brush-fx__spark--2" cx="159" cy="25" r="2.2"/>
+            <circle class="brush-fx__spark brush-fx__spark--3" cx="145" cy="31" r="1.6"/>
+          </svg>
+          <span class="sr-only">Decorative: a small pencil sketches a brushstroke across this row, finishing with a couple of accent sparks, and its heading turns burgundy on hover or focus.</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="section-inner footer-inner">
+    <p>Michelle Geoffray</p>
+    <a href="contact.html">Get in touch →</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

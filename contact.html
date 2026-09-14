@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Michelle Geoffray</title>
+<meta name="description" content="Get in touch with Michelle Geoffray, front-end developer and UI/UX graphic designer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="logo" href="index.html" aria-label="Michelle Geoffray, home">
+      <span class="logo-mark">Michelle Geoffray</span>
+    </a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="work.html">Work</a>
+      <a href="resume.html">Resume</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="nav-burger" id="navBurger" aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html">Home</a>
+    <a href="work.html">Work</a>
+    <a href="resume.html">Resume</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</header>
+
+<main id="main">
+
+  <div class="bg-drift" aria-hidden="true">
+    <!-- left side -->
+    <span class="drift-bubble drift-bubble--forest drift-bubble--point-right" style="left:3%; top:88%; --rise:-140px; animation-duration:20s; animation-delay:-3s;"></span>
+    <span class="drift-bubble drift-bubble--burgundy drift-bubble--point-left drift-bubble--lg" style="left:6%; top:58%; --rise:-170px; animation-duration:26s; animation-delay:-14s;"></span>
+    <span class="drift-bubble drift-bubble--forest drift-bubble--point-right drift-bubble--sm" style="left:2%; top:34%; --rise:-110px; animation-duration:16s; animation-delay:-7s;"></span>
+    <span class="drift-bubble drift-bubble--burgundy drift-bubble--point-left" style="left:7%; top:76%; --rise:-150px; animation-duration:23s; animation-delay:-10s;"></span>
+    <span class="drift-bubble drift-bubble--forest drift-bubble--point-right drift-bubble--lg" style="left:4%; top:13%; --rise:-170px; animation-duration:30s; animation-delay:-20s;"></span>
+
+    <!-- right side -->
+    <span class="drift-bubble drift-bubble--burgundy drift-bubble--point-left" style="right:4%; top:82%; --rise:-150px; animation-duration:22s; animation-delay:-5s;"></span>
+    <span class="drift-bubble drift-bubble--forest drift-bubble--point-right" style="right:7%; top:48%; --rise:-140px; animation-duration:18s; animation-delay:-9s;"></span>
+    <span class="drift-bubble drift-bubble--burgundy drift-bubble--point-left drift-bubble--lg" style="right:3%; top:28%; --rise:-170px; animation-duration:27s; animation-delay:-16s;"></span>
+    <span class="drift-bubble drift-bubble--forest drift-bubble--point-right drift-bubble--sm" style="right:6%; top:66%; --rise:-110px; animation-duration:15s; animation-delay:-4s;"></span>
+    <span class="drift-bubble drift-bubble--burgundy drift-bubble--point-left" style="right:2%; top:8%; --rise:-150px; animation-duration:25s; animation-delay:-12s;"></span>
+  </div>
+
+  <section class="page-hero" style="border-bottom:none; padding-bottom:0;">
+    <div class="section-inner">
+      <p class="eyebrow">Get in touch</p>
+      <div class="contact-hero-flex">
+        <h1 class="contact-statement" style="margin-bottom:0;">Have a project, idea, or opportunity in mind?</h1>
+ 
+        <div class="chat-bubble" id="chatBubble" role="button" tabindex="0" aria-label="Let's talk">
+          <span class="chat-bubble__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="chat-bubble__text">Let's talk!</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:0;">
+    <div class="section-inner">
+      <dl class="contact-list">
+        <div class="contact-row reveal">
+          <dt>Email</dt>
+          <dd><a href="mailto:miageoffray@gmail.com">miageoffray@gmail.com</a></dd>
+        </div>
+        <div class="contact-row reveal">
+          <dt>Phone</dt>
+          <dd><a href="tel:+12607505684">+1 (260) 750-5684</a></dd>
+        </div>
+        <div class="contact-row reveal">
+          <dt>LinkedIn</dt>
+          <dd><a href="http://linkedin.com/in/michelle-geoffray" target="_blank" rel="noopener">linkedin.com/in/michelle-geoffray</a></dd>
+        </div>
+        <div class="contact-row reveal">
+          <dt>GitHub</dt>
+          <dd><a href="https://github.com/MichelleGeoffray" target="_blank" rel="noopener">github.com/MichelleGeoffray</a></dd>
+        </div>
+        <div class="contact-row reveal">
+          <dt>Location</dt>
+          <dd>Everett, WA — open to remote</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="section-inner footer-inner">
+    <p>Michelle Geoffray</p>
+    <a href="mailto:miageoffray@gmail.com">miageoffray@gmail.com</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
